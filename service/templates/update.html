@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM </title>
+    <Style>
+        body{
+            background: url(https://wallpaperaccess.com/full/1078023.jpg);
+            background-size:contain; 
+        }
+        h1{
+            color:chartreuse
+        }
+        p{
+            color: rgb(215, 248, 250);
+        }
+        h2{
+            color: red;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnOKm9Yfu0TOA0weeMSpLYbOUqtDBkaqFhFcFs_NpuA&s); background-repeat: no-repeat; background-size: cover;
+            margin-right: 880px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+        }
+        h3{
+            background: url(https://c0.wallpaperflare.com/preview/61/600/874/energy-inspiration-ideas-planet-waters.jpg); background-repeat: no-repeat; background-size: cover;
+            color: rgb(164, 190, 49);
+            margin-right: 923px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+        }
+        a{
+            color: aqua;
+        }
+        form{
+            color: rgb(255, 157, 0);
+        }
+        #abc{
+            background: url(https://wallpaperaccess.com/full/117435.jpg); background-repeat: no-repeat; background-size: cover;
+            color: rgb(0, 255, 183);
+            margin-right: 723px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+        }
+        img{
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        th{
+            background: whitesmoke;
+            
+        }
+
+        td{
+            background: brown;
+            
+            
+            
+        }
+
+    </Style>
+</head>
+<body>
+<center><h1>WELCOME TO GYM </h1></center><hr>
+<p>HRX, India's first home-grown fitness brand, which is owned by Bollywood star, Hrithik Roshan and Exceed Entertainment, has recently forayed into the category of sports and fitness equipment for home workouts.</p>
+<h2>Fitness or we’ll call the police.</h2>
+
+<H3> CATEGORIES OF WORKOUT </H3>
+<img src="https://th.bing.com/th/id/R.ff23d1606b9caea4dc0c6504a81919be?rik=6VZS1o5dGhX%2bpg&riu=http%3a%2f%2fworkout-sportman.com%2fwp-content%2fuploads%2f2018%2f06%2forig.png&ehk=K0QolBM8kt7P1JNLijwoL1db4Tts9U2SpsUhII3YG3w%3d&risl=&pid=ImgRaw&r=0" height="154" width="300" alt="">
+<br>
+<a href="https://en.wikipedia.org/wiki/Aerobic_exercise"> CARDIO </a>
+<br>
+<br>
+<br>
+<img src="https://www.smarterhealthandfitness.com/images/cardio%202%20copy.jpg" height="154" width="300"  alt="">
+<br>
+<a href="https://www.verywellfit.com/the-history-of-weight-training-and-lifting-3498501"> WIGHT TRAINING </a>
+<br>
+<br>
+<br>
+<img src="https://th.bing.com/th/id/OIP.lSDlF3yTzIk-hkOZYkVdoAHaEz?w=266&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="154" width="300"  alt="">
+<br>
+<a href="https://en.wikipedia.org/wiki/Yoga"> YOGA TRAINING </a>
+<br>
+<br>
+<br>
+<img src="https://th.bing.com/th/id/OIP.Z6-U-pH7CTvKUKADF0Wo7gHaH2?w=209&h=220&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="154" width="300"  alt="">
+<br>
+<a href="https://en.wikipedia.org/wiki/Zumba#:~:text=Zumba%20was%20created%20in%20the%201990s%20by%20dancer,dancing%20into%20other%20classes%2C%20calling%20it%20%22Rumbacize%22.%20"> ZUMBA TRAINING </a>
+<br>
+<br>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    NAME:<input type="text" name="name" value="{{upp.name}}">
+    <br>
+    <br>
+    CONTACT NO:<input type="number" name="contact" value="{{upp.contact}}">
+    <br>
+    <br>
+    GENDER: <input type="text" name="gender" value="{{upp.gender}}">
+    <br>
+    <br>
+    ADDRESS: <input type="text" name="address" value="{{upp.address}}">
+    <br>
+    <br>
+    <input type="submit">
+    
+</form>
+
+{{home}}
+
+<marquee behavior="scroll" direction="left"><h1 id="abc">50% FREE ACHI MADI CHALA</h1></marquee>
+
+</body>
+</html>

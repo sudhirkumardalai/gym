@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color:green;
+        }
+        body{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>THIS IS LOGIN PAGE</center></h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum consectetur minima libero rerum, ab dolores sint culpa, ratione itaque consequatur possimus harum, a expedita! Officiis vero tempora cupiditate autem aliquam.
+    <br>
+    <br>
+
+<center><form action="" method="post">
+    {% csrf_token %}
+
+    {% if messages %}
+    <div class="alert alert-primary" role="alert">
+        {% for message in messages %}
+                 {{message}}
+
+        {% endfor %}     
+    </div>
+    {% endif %}
+    <div>
+        <label for=""><h3>USER NAME :</h3></label>
+        <input type="text" name="username">
+    </div>
+    <br>
+    <br>
+    <label for=""><h3>PASSWORD :</h3></label>
+    <input type="text" name="password" >
+    <br>
+    <br>
+    <input type="submit">
+
+    <p><h3>If new user register here....... </h3> <a href="/register/"><h3>register page</h3></a></p>
+</form>
+</center>
+    
+</body>
+</html>

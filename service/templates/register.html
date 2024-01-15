@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color:yellow;
+        }
+        body{
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>THIS IS REGISTER PAGE</center></h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum consectetur minima libero rerum, ab dolores sint culpa, ratione itaque consequatur possimus harum, a expedita! Officiis vero tempora cupiditate autem aliquam.
+    <br>
+    <br>
+
+<center><form action="" method="post">
+    {% csrf_token %}
+
+    {% if messages %}
+    <div class="alert alert-primary" role="alert">
+        {% for message in messages %}
+                 {{message}}
+
+        {% endfor %}     
+    </div>
+    {% endif %}
+    <div>
+        <label for=""><h3>FIRST NAME :</h3></label>
+        <input type="text" name="first_name">
+    </div>
+    <br>
+    <div>
+        <label for=""><h3>LAST NAME :</h3></label>
+        <input type="text" name="last_name">
+    </div>
+    <br>
+    <div>
+        <label for=""><h3>USER NAME :</h3></label>
+        <input type="text" name="username">
+    </div>
+    <br>
+    <div>
+    <label for=""><h3>PASSWORD :</h3></label>
+    <input type="password"  name="password">
+    </div>
+    <br>
+    <br>
+    <input type="submit">
+
+    <p><h3>If new user register here....... </h3><a href="/log/"><h3>login page</h3></a></p>
+</form>
+</center>
+    
+</body>
+</html>
